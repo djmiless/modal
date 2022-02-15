@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
+</head>
+
+<body>
+
+    <div class="container">
+        <!--Navigation Links -->
+        <nav class="nav">
+            <a href="" class="logo">Logo</a>
+
+            <ul class="nav-menu">
+                <li class="nav-item"><a href=''>Home</a></li>
+                <li class="nav-item nav-item-parent1">
+                    <a href='#'>About Us</a>
+                    <ul class="sub-nav1">
+                        <li class="sub-nav-item1"><a href=''>Marketing Information</a></li>
+                        <li class="sub-nav-item1"><a href=''>Distribution Product</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item nav-item-parent">
+                    <a href='#'>Contact Us</a>
+                    <ul class="sub-nav">
+                        <li class="sub-nav-item"><a href=''>Facebook</a></li>
+                        <li class="sub-nav-item"><a href=''>Twitter</a></li>
+                    </ul>
+                
+                </li>
+                <li class="nav-item" onclick="document.getElementById('login-wrapper').style.display='block'"><a href='#'>Log Into Account</a></li>
+            </ul>
+        </nav>
+        <!-- End of Navigation Links -->
+
+
+        <!-- Main Content -->
+        <main class="main">
+            <section class="section">
+                <h1>Main contents</h1>
+
+            </section>
+
+            <aside class="aside">
+                <h3>Sign Up</h3>
+            </aside>
+
+        </main>
+        <!-- End of Main Content -->
+
+    </div>
+
+
+    <div class="login-wrap" id="login-wrapper">
+        <div class="login-html">
+            <input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Sign In</label>
+            <input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">Sign Up</label>
+            
+            <div class="login-form">
+                <div class="sign-in-htm">
+                    <div class="group">
+                        <label for="user" class="label">Username</label>
+                        <input id="user" type="text" class="input">
+                    </div>
+                    <div class="group">
+                        <label for="pass" class="label">Password</label>
+                        <input id="pass" type="password" class="input" data-type="password">
+                    </div>
+                    <div class="group">
+                        <input id="check" type="checkbox" class="check" checked>
+                        <label for="check"><span class="icon"></span> Keep me Signed in</label>
+                    </div>
+                    <div class="group">
+                        <input type="submit" class="button" value="Sign In">
+                    </div>
+                    <div class="hr"></div>
+                    <div class="foot-lnk">
+                        <a href="#forgot">Forgot Password?</a>
+                    </div>
+                </div>
+                <div class="sign-up-htm">
+                    <div class="group">
+                        <label for="user" class="label">Username</label>
+                        <input id="user" type="text" class="input">
+                    </div>
+                    <div class="group">
+                        <label for="pass" class="label">Password</label>
+                        <input id="pass" type="password" class="input" data-type="password">
+                    </div>
+                    <div class="group">
+                        <label for="pass" class="label">Repeat Password</label>
+                        <input id="pass" type="password" class="input" data-type="password">
+                    </div>
+                    <div class="group">
+                        <label for="pass" class="label">Email Address</label>
+                        <input id="pass" type="text" class="input">
+                    </div>
+                    <div class="group">
+                        <input type="submit" class="button" value="Sign Up">
+                    </div>
+                    <div class="hr"></div>
+                    <div class="foot-lnk">
+                        <label for="tab-1">Already Member?</a>
+                    </div>
+                </div>
+            </div>
+           <a href="#"><span class="material-icons" onclick="document.getElementById('login-wrapper').style.display='none'">close</span></a>
+        </div>
+    </div>
+    
+<script src="script.js"></script>
+</body>
+</html>
